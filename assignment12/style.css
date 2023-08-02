@@ -1,0 +1,37 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    display: flex;
+    height: 100%;
+    overflow: hidden; /* Prevents the right part from overflowing */
+  }
+
+  .left-part {
+    flex: 1;
+    overflow-y: auto; /* Enables vertical scrolling for the left part */
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+
+  .right-part {
+    flex: 1;
+    padding: 20px;
+    background-color: #e0e0e0;
+  }
+
+  /* Optional: To style the content within the scrollable area */
+  .scroll-content {
+    max-width: 400px; /* Optional: Set a maximum width for the scrollable content */
+  }
+
+  table {
+    width: 100%;
+  }
+
+tr, td {
+  border-bottom: 1px solid black;
+}
