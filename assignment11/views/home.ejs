@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Homepage</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Homepage</h1>
+    </header>
+    <%- include('header') %>
+    <section>
+        <h2>Welcome 
+            <% if (username) { %>
+                <span> <%= username %> </span>
+            <% } %>
+        </h2>
+        <p>
+            This is a simple homepage example with navigation options for Home, Contact, and About.
+            Feel free to explore the different sections!
+        </p>
+    </section>
+    <footer>
+        <p>Contact: contact@example.com</p>
+    </footer>
+</body>
+</html>
